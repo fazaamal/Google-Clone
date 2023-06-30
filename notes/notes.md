@@ -66,3 +66,34 @@ Here's an example that demonstrates the usage of `justify-content`:
 In this example, the `.container` class is applied to the flex container, and `justify-content: space-between;` is used to evenly distribute the flex items along the main axis, with space between the items.
 
 Feel free to adjust the CSS selector (`.container`) and the value of `justify-content` based on your specific layout requirements.
+
+## CSS for different screen sizes
+
+To group certain CSS stylings for specific screen sizes, you can use media queries in your CSS. Media queries allow you to apply different styles based on the characteristics of the device or viewport, such as screen size, resolution, or orientation. Here's an example:
+
+```css
+/* Default styles for all screen sizes */
+.element {
+  /* Default styles */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .element {
+    /* Styles for screens up to 768px */
+  }
+}
+
+/* Media query for screens with a minimum width of 1024px */
+@media (min-width: 1024px) {
+  .element {
+    /* Styles for screens starting from 1024px */
+  }
+}
+```
+
+In the above code, the `.element` class represents the selector for the HTML element you want to target. The default styles are applied to all screen sizes outside of any media queries.
+
+Inside the media queries, you can define specific styles for different screen sizes using the `max-width` and `min-width` properties. In the example, the first media query applies styles for screens with a maximum width of 768px, while the second media query applies styles for screens with a minimum width of 1024px.
+
+You can add as many media queries as needed and customize the styles within each query to suit your specific requirements. By grouping your CSS stylings within media queries, you can create responsive designs that adapt to different screen sizes and provide an optimal user experience.

@@ -56,3 +56,21 @@ window.addEventListener('scroll', function() {
     filters.classList.remove('sticky');
   }
 });
+
+let menu = document.getElementById('menu-icon');
+let sidebar = document.getElementById('sidebar');
+let overlay = document.getElementById('overlay');
+
+menu.addEventListener('click', function(){
+    console.log('clicked');
+    // sidebar.style.transform = "translate(0px)";
+    // sidebar.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+)
+
+overlay.addEventListener('click', function(){
+  sidebar.classList.toggle('active');
+  overlay.classList.toggle('active');
+})
